@@ -1,0 +1,4 @@
+<h2>Dear <%= current_user.name %></h2>
+<p><%= current_user.email %></p>
+
+<%= button_to "Edit Profile", edit_user_path, form: {target: '_blank'},:method => :get, :class => "btn" %>

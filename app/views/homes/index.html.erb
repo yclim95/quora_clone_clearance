@@ -1,0 +1,5 @@
+<% if signed_in? %>
+  <p><%= link_to "Profile", user_path(:id => current_user.id) %></p>
+  <%= current_user.email %>
+<% else %>
+<% end %>

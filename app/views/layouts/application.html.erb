@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QuoraCloneClearance</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <h1>QuoraClone</h1>
+  <div id="header">
+    <% if signed_in? -%>
+      <%= button_to t(".sign_out"), sign_out_path, method: :delete %>
+      <%= current_user.name %>
+    <% else %>
+      <%= button_to  "Sign In", sign_in_path , :method => :get %>
+    <% end %>
+  </div>
+
+  <br>
+  <div id="flash">
+    <% flash.each do |key, value|%>
+      <div class="flash_<%= key %>"><%=value %></div>
+    <% end %>
+  </div>
+
+  <%= yield %>
+</body>
+</html>
