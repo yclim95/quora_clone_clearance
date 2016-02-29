@@ -7,11 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<h1 class="title"> </h1> 
-	<h2>Dear <%= current_user.name %></h2>
-	<p><%= current_user.email %></p>
+  <h1 class="title">QuoraClone</h1>
 
-	<%= button_to "Edit Profile", edit_user_path, form: {target: '_blank'},:method => :get, :class => "btn" %>
+  <br>
+  <div id="flash">
+    <% flash.each do |key, value|%>
+      <div class="flash_<%= key %>"><%=value %></div>
+    <% end %>
+  </div>
 
+  <%= yield %>
 </body>
 </html>

@@ -23,5 +23,8 @@ $(document).ready(function(){
   .mouseleave(function() {
     $(this).blur();
   });
+  
+  document.title = $(document).find("title").text();
+  var title = document.title;
+  document.getElementsByClassName("title")[0].innerHTML = title;
 });
-

@@ -1,9 +1,8 @@
 class SessionClearancesController < Clearance::SessionsController
-  layout "application"
+  layout "sign_in"
 
   def new
     @user = User.new 
-    render :session_clearances => 'new'
   end
 
 	def create
