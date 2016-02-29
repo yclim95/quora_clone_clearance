@@ -36,8 +36,8 @@
 
 1) Commands
 
-	1.1) Gem 'clearance'
-	
+	1.1) gem 'clearance'
+
 		1.1.1) After bundle install , Run this line of code ($ rails generate clearance:install)
 
 		1.1.2) MUST "bundle exec rake db:migrate"
