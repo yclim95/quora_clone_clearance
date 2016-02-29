@@ -24,7 +24,7 @@ $(document).ready(function(){
     $(this).blur();
   });
   
-  document.title = $(document).find("title").text();
-  var title = document.title;
+  //var title = $(document).find("title").text();
+  var title = "QuoraCloneClearance"
   document.getElementsByClassName("title")[0].innerHTML = title;
 });
