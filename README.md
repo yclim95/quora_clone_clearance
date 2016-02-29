@@ -35,8 +35,9 @@
 ## 4.0 Usages
 
 1) Commands
-
-	1.1) gem 'clearance'
+```html
+	1.1) gem <span style="color: blue"> 'clearance' </span>
+```
 
 		1.1.1) After bundle install , Run this line of code ($ rails generate clearance:install)
 
