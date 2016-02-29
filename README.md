@@ -29,6 +29,7 @@
 
 1. [Clearance](https://github.com/thoughtbot/clearance)
 2. [Clearance_sample](http://www.sitepoint.com/simple-rails-authentication-with-clearance/)
+3. [Clearance_sample](https://docs.omniref.com/ruby/gems/clearance/1.8.0)
 
 ---
 
