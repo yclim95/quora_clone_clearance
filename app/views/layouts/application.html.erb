@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <h1 class="title"></h1>
+  <h1 class="title"><%= title %> </h1> 
   <div id="header">
     <% if signed_in? -%>
       <p>DEAR <%= current_user.name %></p>
