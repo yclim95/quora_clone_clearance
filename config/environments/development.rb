@@ -8,8 +8,8 @@ config.action_mailer.delivery_method = :smtp
       :address              => "smtp.gmail.com",
       :port                 => 587,
       :domain               => "gmail.com",
-      :user_name            => "lyc950421@gmail.com",
-      :password             => "ilike2swim",
+      :user_name            => ENV["pusher_user_name"],
+      :password             => ENV["pusher_password"],
       :authentication       => :plain,
       :enable_starttls_auto => true
 }
