@@ -7,13 +7,21 @@ class SessionClearancesController < Clearance::SessionsController
 
 	def create
     @user = authenticate(params)
+
     sign_in(@user) do |status|
       if status.success?
-      	flash[:notice] = "You are successfully Log In"
-        #redirect_back_or url_after_create
-        redirect_to root_path
+      	flash[:success] = "You are successfully Log In"
+        redirect_back_or url_after_create
+
       else
-      	flash.now[:error] = status.failure_message
+      	#flash.now[:error] = status.failure_message
+
+        if User.find_by_email(params[:session][:email]).nil?
+          flash.now[:danger] = "#{params[:session][:email]} is not valid."
+        else
+          flash.now[:danger] = "Invalid password."
+        end
+
         render "new", status: :unauthorized
       end
     end

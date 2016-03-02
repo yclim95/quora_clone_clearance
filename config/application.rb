@@ -24,5 +24,9 @@ module QuoraCloneClearance
     config.active_record.default_timezone = :local
     config.active_record.time_zone_aware_attributes = false   
     config.active_record.raise_in_transactional_callbacks = true
+
+    config.sass.load_paths << File.expand_path('../../vendor/assets/stylesheets/')
+    config.sass.load_paths << File.expand_path('../../lib/assets/stylesheets/')
+
   end
 end

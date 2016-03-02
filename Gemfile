@@ -28,6 +28,13 @@ gem 'clearance'
 
 # Figaro Gem 
 gem "figaro"
+
+# facebook
+gem 'omniauth'
+gem 'omniauth-facebook'
+
+#Bootstrap
+gem 'bootstrap-sass'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
