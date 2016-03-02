@@ -13,6 +13,7 @@
 2) Applied ActiveRecord and Postgresql 
 
 	2.1) User (database)
+	2.2) Authentication (database)
 
 
 3) Applied Gem 
