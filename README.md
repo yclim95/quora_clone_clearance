@@ -19,6 +19,8 @@
 
 	3.1) Clearance 
 	3.2) Figaro
+	3.3) omniauth-facebook
+	3.4) omniauth
 
 ---
 
@@ -33,6 +35,7 @@
 3. [Clearance_sample](https://docs.omniref.com/ruby/gems/clearance/1.8.0)
 4. [Clearance_email_sample ](https://robots.thoughtbot.com/email-confirmation-with-clearance)
 5. [Figaro](https://github.com/laserlemon/figaro)
+6. [omniauth-facebook](https://github.com/mkdynamic/omniauth-facebook)
 
 ---
 
