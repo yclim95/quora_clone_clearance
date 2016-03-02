@@ -26,9 +26,9 @@
 
 ## 2.0 Gems Links 
 
-[Clearance](https://github.com/thoughtbot/clearance)
-[Figaro](https://github.com/laserlemon/figaro)
-[omniauth-facebook](https://github.com/mkdynamic/omniauth-facebook)
+[Clearance](https://github.com/thoughtbot/clearance)  
+[Figaro](https://github.com/laserlemon/figaro)  
+[omniauth-facebook](https://github.com/mkdynamic/omniauth-facebook)  
 
 ## <a name="resources"></a> 3.0 Resources 
 
