@@ -27,6 +27,8 @@
 ## 2.0 Gems Links 
 
 [Clearance](https://github.com/thoughtbot/clearance)
+[Figaro](https://github.com/laserlemon/figaro)
+[omniauth-facebook](https://github.com/mkdynamic/omniauth-facebook)
 
 ## <a name="resources"></a> 3.0 Resources 
 
@@ -50,8 +52,11 @@
 
 		1.1.2) MUST "bundle exec rake db:migrate"
 
-3) Rename README.extension 
+	2.1) gem "figaro"
+		```rb
+		2.1.1) $ bundle exec figaro install
+		```
 
-	3.1) git mv README.rdoc README.md
+2) Rename README.extension 
 
-Feel free to review the <tt>[code here](https://github.com/yclim95/quora_clone_clearance)</tt> 
+	2.1) git mv README.rdoc README.md
