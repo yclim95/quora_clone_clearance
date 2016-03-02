@@ -53,12 +53,12 @@
 
 		1.1.2) MUST "bundle exec rake db:migrate"
 
-```ruby
+		```ruby
 	2.1) gem "figaro"
-```
-		```bash
-		2.1.1) $ bundle exec figaro install
 		```
+				```bash
+		2.1.1) $ bundle exec figaro install
+				```
 
 2) Rename README.extension 
 
