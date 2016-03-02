@@ -53,8 +53,10 @@
 
 		1.1.2) MUST "bundle exec rake db:migrate"
 
+```ruby
 	2.1) gem "figaro"
-		```rb
+```
+		```bash
 		2.1.1) $ bundle exec figaro install
 		```
 
