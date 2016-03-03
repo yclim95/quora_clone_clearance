@@ -15,10 +15,17 @@ Rails.application.routes.draw do
   delete "/sign_out" => "clearance/sessions#destroy", as: "sign_out"
   get "/sign_up" => "clearance/users#new", as: "sign_up"
   post "sign_in" => "session_clearances#create"
+
+  #home
+  get "/about" => "homes#about", as: "about"
+  get "/contact_us" => "homes#contact", as: "contact"
  
   resources :homes
-  root 'homes#index'
+  root 'homes#cover'
 
   # OmniAuth Facebook
   get "/auth/:provider/callback" => "sessions#create_from_omniauth"
+
+  # Redirect to root if page not FOUND
+  get ':not_found', to: redirect('/') 
 end

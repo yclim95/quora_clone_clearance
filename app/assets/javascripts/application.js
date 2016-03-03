@@ -16,6 +16,7 @@
 //= require_tree .
 //= require jquery
 //= require bootstrap-sprockets
+//= require_tree ../../../vendor/assets/javascripts/.
 
 $(document).ready(function(){
   $('.btn')
