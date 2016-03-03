@@ -29,7 +29,6 @@
         line-height: 25px;
         padding: 4px 45px 4px 15px;
         font-weight: bold;
-        background: url(../images/arrow.png) 95% 50% no-repeat;
       }
       .phoneytab {
         text-shadow: 0 -1px 0 #000;
@@ -40,7 +39,11 @@
       }
 
 #card_cover{
-  background-color: #fff;
+  position: relative;
+      display: inline-block;
+      vertical-align: top;
+      background-color: #fff;
+      box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
 }
 
 #about_text {

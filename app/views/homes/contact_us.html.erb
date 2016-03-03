@@ -1,14 +1,10 @@
+      <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.9015133212056!2d101.60995831447383!3d3.120746254197571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4eadb189222d%3A0x9cdd7bfc6db179d8!2s23%2C+Lorong+SS+23%2F6e%2C+Taman+Sea%2C+47400+Petaling+Jaya%2C+Selangor!5e0!3m2!1sen!2smy!4v1457027517094" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
 
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-      var script = '<script src="../src/infobubble';
-      if (document.location.search.indexOf('compiled') !== -1) {
-        script += '-compiled';
-      }
-      script += '.js"><' + '/script>';
-      document.write(script);
-    </script>
-    <script>
+      <p>For more enquiries,You can drop us an <a id="email" href="mailto:airbnbtest3@gmail.com" data-toggle="tooltip" title="airbnbtest3@gmail.com">email </a></p>
+
+      <script>
       var map, infoBubble, infoBubble2;
       function init() {
         var mapCenter = new google.maps.LatLng({lat: 3.1207329, lng: 101.61212999999998});
@@ -69,24 +65,10 @@
           }
         });
 
-        google.maps.event.addDomListener(document.getElementById('update'),
-            'click', updateStyles);
-        google.maps.event.addDomListener(document.getElementById('add'),
-            'click', addTab);
-        google.maps.event.addDomListener(document.getElementById('update-tab'),
-            'click', updateTab);
-        google.maps.event.addDomListener(document.getElementById('remove'),
-            'click', removeTab);
-        google.maps.event.addDomListener(document.getElementById('open'),
-            'click', function() {
-            infoBubble2.open();
-        });
-        google.maps.event.addDomListener(document.getElementById('close'),
-            'click', function() {
-          infoBubble2.close();
-        });
+     
 
       }
+
       google.maps.event.addDomListener(window, 'load', init);
 
       function updateStyles() {
@@ -157,15 +139,4 @@
         infoBubble.removeTab(index);
       }
     </script>
-    <script>
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-12846745-20']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' === document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
-    <div id="map"></div>
+    

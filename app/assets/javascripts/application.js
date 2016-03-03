@@ -28,6 +28,8 @@ $(document).ready(function(){
   });
   
   //var title = $(document).find("title").text();
-  var title = "QuoraCloneClearance"
-  document.getElementsByClassName("title")[0].innerHTML = title;
+  //var title = "QuoraCloneClearance"
+  //document.getElementsByClassName("title")[0].innerHTML = title;
+
+  $('[data-toggle="tooltip"]').tooltip(); 
 });
