@@ -3,12 +3,12 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = true
 config.action_mailer.perform_deliveries = true
  config.action_mailer.default_url_options = { :host => "localhost:3000" }
- config.action_mailer.smtp_settings = {
+  config.action_mailer.smtp_settings = {
       :address              => "smtp.gmail.com",
       :port                 => 587,
       :domain               => "gmail.com",
-      :user_name            => "lyc950421@gmail.com",
-      :password             => "ilike2swim",
+      :user_name            => ENV["pusher_user_name"],
+      :password             => ENV["pusher_password"],
       :authentication       => :plain,
       :enable_starttls_auto => true
 }
